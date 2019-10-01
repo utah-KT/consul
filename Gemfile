@@ -11,9 +11,10 @@ group :lint do
 end
 
 group :unit, :integration do
+  gem 'cookbook-omnifetch', '0.8.1'
   gem 'chef-dk', '~> 1.0'
   gem 'chefspec'
-  gem 'rubyzip'
+  gem 'rubyzip', '~> 1.0'
   gem 'serverspec'
   gem 'rb-readline'
 end
